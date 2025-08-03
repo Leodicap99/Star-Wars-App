@@ -79,9 +79,10 @@ Make sure Docker is installed and running on your system.
 ## ✨ Features
 
 * Display Star Wars characters and movies with Ant Design tables
+* Table with sorting nature on Name, Director and Release date
 * Shimmer loading animations for better UX
 * Star Wars-themed UI: black background and yellow text
-* Header and footer with logos
+* Header with logos
 * Fully dockerized for easy deployment
 
 ---
