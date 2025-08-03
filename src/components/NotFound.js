@@ -1,4 +1,10 @@
-// src/components/NotFound.jsx
+/**
+ * NotFound component renders a 404 error page with a message and a button
+ * to navigate back to the home page.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered NotFound component.
+ */
 import { useNavigate } from "react-router";
 import "./NotFound.css";
 

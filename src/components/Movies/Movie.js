@@ -8,7 +8,18 @@ import Starship from "../Cards/StarshipCard";
 import SpecieCard from "../Cards/SpecieCard";
 import LoadingScreen from "../Shimmer/LoadingScreen";
 import NotFound from "../NotFound";
-
+/**
+ * Movie component fetches and displays detailed information about a specific movie,
+ * including its title, episode, director, producer, release date, and associated entities
+ * such as characters, planets, starships, species, and vehicles.
+ * 
+ * The component uses the `movieUrl` query parameter to fetch movie data from an API.
+ * It handles loading and error states and provides navigation back to the movies list.
+ * 
+ * @component
+ * @returns {JSX.Element} The rendered Movie component.
+ * 
+ */
 function Movie(){
     const [searchParams] = useSearchParams();
     const navigate = useNavigate();

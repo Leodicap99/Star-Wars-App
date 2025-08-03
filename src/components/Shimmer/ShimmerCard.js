@@ -1,6 +1,12 @@
-// src/components/ShimmerCard.jsx
 import "./ShimmerCard.css";
-
+/**
+ * ShimmerCard is a functional React component that renders a shimmer effect
+ * placeholder for loading content. It displays a list of shimmer cards
+ * to simulate the loading state of character descriptions.
+ *
+ * @component
+ * @returns {JSX.Element} A JSX element containing shimmer placeholders.
+ */
 function ShimmerCard() {
     return (
       <div className="character-description">

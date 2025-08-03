@@ -1,6 +1,19 @@
 import { Table } from "antd";
 import { useNavigate } from "react-router";
-
+/**
+ * MovieTable component renders a table of movies using Ant Design's Table component.
+ * Each row in the table is clickable and navigates to a detailed view of the movie.
+ *
+ * @param {Object} props - The props object.
+ * @param {Array} props.movies - An array of movie objects. Each movie object should have the following properties:
+ *   @param {number} props.movies[].episode_id - The unique identifier for the movie.
+ *   @param {string} props.movies[].title - The title of the movie.
+ *   @param {string} props.movies[].director - The director of the movie.
+ *   @param {string} props.movies[].release_date - The release date of the movie in ISO format.
+ *   @param {string} props.movies[].url - The URL for more details about the movie.
+ *
+ * @returns {JSX.Element} A table displaying the movies with sortable columns and clickable rows.
+ */
 function MovieTable({movies}){
     let navigate = useNavigate();
     const columns = [

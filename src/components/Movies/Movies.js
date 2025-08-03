@@ -1,6 +1,15 @@
 import { useEffect, useState } from "react";
 import MovieTable from "./MovieTable";
 import './Movies.css';
+import NotFound from "../NotFound";
+/**
+ * The Movies component fetches and displays a list of Star Wars movies.
+ * It uses the Star Wars API to retrieve movie data and displays it in a table.
+ * Handles loading and error states during the data fetching process.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered Movies component.
+ */
 function Movies(){
     const [movies,setMovies] = useState([]);
     const [loading,setLoading] = useState(true);
@@ -19,6 +28,9 @@ function Movies(){
         }
         fetchData();
     },[]);
+    if (error) {
+        return <NotFound />;
+    }
     return (
         <div className="movies-page">
             <h1 className="star-wars-heading">Star Wars Movies</h1>
