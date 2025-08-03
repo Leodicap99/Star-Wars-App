@@ -87,9 +87,14 @@ Make sure Docker is installed and running on your system.
 
 ---
 
-## 📷 Screenshots (Optional)
+## 📷 Screenshots (Shimmer effetcs and error handling)
 
-> You can add screenshots here to show the UI.
+<img width="1296" height="839" alt="image" src="https://github.com/user-attachments/assets/297d1288-e3c7-49a4-bc68-e7a743b99de9" />
+<img width="1296" height="839" alt="image" src="https://github.com/user-attachments/assets/f1b36266-ac25-4f3c-9d18-057c7dddf8ec" />
+<img width="1296" height="839" alt="image" src="https://github.com/user-attachments/assets/d65f8d29-20ad-4839-935e-ab727e8e4cd9" />
+<img width="1296" height="839" alt="image" src="https://github.com/user-attachments/assets/cff57bab-5c83-4ad1-8cd5-23139e471f78" />
+
+
 
 ---
 
