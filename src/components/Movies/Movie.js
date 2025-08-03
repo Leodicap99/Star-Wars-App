@@ -7,6 +7,7 @@ import Planet from "../Cards/PlanetCard";
 import Starship from "../Cards/StarshipCard";
 import SpecieCard from "../Cards/SpecieCard";
 import LoadingScreen from "../Shimmer/LoadingScreen";
+import NotFound from "../NotFound";
 
 function Movie(){
     const [searchParams] = useSearchParams();
@@ -36,7 +37,7 @@ function Movie(){
     }
 
     if (error) {
-        return <p>Error: {error.message}</p>;
+        return <NotFound />;
     }
 
     return (
