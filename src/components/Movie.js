@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useSearchParams } from "react-router";
-import { fetchArrayOfResponses } from "../utils/fetchArrayOfResponses";
 import EntityList from "./EntityList";
-import VehicleCard from "./VehicleCard";
-import Character from "./Character";
-import Planet from "./Planet";
-import Starship from "./Starship";
-import SpecieCard from "./SpecieCard";
+import VehicleCard from "./Cards/VehicleCard";
+import Character from "./Cards/CharacterCard";
+import Planet from "./Cards/PlanetCard";
+import Starship from "./Cards/StarshipCard";
+import SpecieCard from "./Cards/SpecieCard";
 
 function Movie(){
     const [searchParams] = useSearchParams();

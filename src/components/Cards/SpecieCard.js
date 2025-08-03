@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { fetchArrayOfResponses } from "../utils/fetchArrayOfResponses";
+import { fetchArrayOfResponses } from "../../utils/fetchArrayOfResponses";
 
 function SpecieCard({specie}){
      const [people, setPeople] = useState([]);

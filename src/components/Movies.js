@@ -18,7 +18,7 @@ function Movies(){
             }
         }
         fetchData();
-    },[])
+    },[]);
     return (
         <div className="movies-page">
             <h1 className="star-wars-heading">Star Wars Movies</h1>
