@@ -52,10 +52,24 @@ Make sure Docker is installed and running on your system.
 │       └── starwars-logo.png
 ├── src/
 │   ├── components/
-│   │   ├── Header.jsx
-│   │   ├── Footer.jsx
-│   │   ├── Movies.jsx
-│   │   ├── ShimmerCard.jsx
+│   │   ├── Cards
+│   │   |     ├── CharacterCard.jsx
+│   │   |     ├── PlanetCard.jsx
+│   │   |     ├── SpecieCard.jsx
+│   │   |     ├── VehicleCard.jsx
+│   │   ├── Movies
+│   │         ├── EntityList.jsx
+│   │         ├── Movie.jsx
+│   │         ├── MovieTabel.jsx
+│   │         ├── Movies.css
+│   │   ├── Shimmer
+│   │         ├── LoadingScreen.jsx
+│   │         ├── LoadingScreen.css
+│   │         ├── ShimmerCard.jsx
+│   │         ├── ShimmerCard.css
+│   │   ├── utils
+│   │         ├── fetchArrayOfResponses.jsx
+│   ├── 
 │   ├── App.js
 │   ├── App.css
 ├── Dockerfile
@@ -84,7 +98,4 @@ Make sure Docker is installed and running on your system.
 
 Built with ❤️ using React, Ant Design, and Docker.
 
-```
 
-This content is now fully compatible with `.md` syntax — just save it as `README.md` in your root directory. Let me know if you'd like me to add screenshots, usage tips, or badges!
-```
