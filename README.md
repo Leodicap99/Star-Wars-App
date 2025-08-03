@@ -112,6 +112,6 @@ Make sure Docker is installed and running on your system.
 
 ## 🧠 Credits
 
-Built with ❤️ using React, Ant Design, and Docker.
+Built using React, Ant Design, and Docker.
 
 
