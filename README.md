@@ -1,5 +1,4 @@
 # ⭐ Star Wars App
-````md
 A Star Wars-themed React application that displays character and movie data in a stylish UI using Ant Design, with support for Docker containerization.
 
 ---
