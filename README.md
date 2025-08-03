@@ -21,6 +21,7 @@ This will start the app at `http://localhost:3000`.
 If you want to run the containerized version of the app, use:
 
 ```bash
+docker buildx build . --tag my-app 
 docker run -d -p 3000:80 my-app
 ```
 
