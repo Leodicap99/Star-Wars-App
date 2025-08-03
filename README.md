@@ -1,5 +1,3 @@
-You're right — here's your updated `README.md` content in proper `.md` (Markdown) format, with all elements correctly written for a Markdown file:
-
 ````md
 # ⭐ Star Wars App
 
