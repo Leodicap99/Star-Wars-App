@@ -1,0 +1,168 @@
+.movies-page{
+    background-color: black; /* Star Wars themed background */
+    color: yellow; /* Star Wars yellow text */
+    font-family: 'Star Jedi', sans-serif; /* Use a Star Wars themed font */
+    padding: 20px;
+}
+/* Center the table and make it larger */
+.movies-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black; /* Optional: Add a light background for contrast */
+    color: yellow; /* Star Wars yellow */
+  }
+  
+  /* Style the table */
+ /* Container for center alignment */
+.movies-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+  }
+  
+  /* Star Wars themed table */
+  .movie-table {
+    width: 80%;
+    min-width: 1200px;
+    background-color: black;
+    border: 2px solid yellow;
+    box-shadow: 0 0 10px yellow;
+    border-radius: 8px;
+    color: yellow;
+  }
+  
+  /* Header styling */
+  .movie-table .ant-table-thead > tr > th {
+    background-color: black !important;
+    color: yellow !important;
+    text-align: center;
+    border-bottom: 2px solid yellow !important;
+  }
+  
+  /* Body cell styling */
+  .movie-table .ant-table-tbody > tr > td {
+    background-color: black !important;
+    color: yellow !important;
+    text-align: center;
+    border-bottom: 1px solid yellow !important;
+  }
+  
+  /* Row hover effect */
+  .movie-table .ant-table-tbody > tr:hover > td {
+    background-color: #222 !important;
+    color: #ffe81f !important; /* Star Wars yellow */
+  }
+  
+  /* Pagination styling */
+  .movie-table .ant-pagination {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    color: yellow;
+  }
+  
+  .movie-table .ant-pagination-item {
+    border-color: yellow;
+    color: yellow;
+    background-color: black !important;
+  }
+  
+  .movie-table .ant-pagination-item-active {
+    background-color: yellow !important;
+    color: black !important;
+    font-weight: bold;
+    border-color: yellow !important;
+  }
+/* Make the sort icons yellow */
+.movie-table .ant-table-column-sorter {
+    color: yellow !important;
+  }
+  
+  /* Optional: fine-tune individual icons */
+  .movie-table .ant-table-column-sorter-up,
+  .movie-table .ant-table-column-sorter-down {
+    color: yellow !important;
+  }
+  
+  /* Make the active sort icon even brighter */
+  .movie-table .ant-table-column-sorter-up.active,
+  .movie-table .ant-table-column-sorter-down.active {
+    color: #ffe81f !important; /* Star Wars yellow */
+  }
+  .movie-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black; /* Optional: Add a light background for contrast */
+    color: yellow;
+  }  
+  .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    margin-bottom: 20px;
+    background-color: black;
+    color: yellow;
+    border: 2px solid yellow;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    &:hover {
+        background-color: yellow;
+        color: black;
+    }
+  }
+  .character-description{
+    background-color: black;
+    color: yellow;
+    padding: 20px;
+  }
+  .entity-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    background-color: black;
+  }
+  .character-card {
+    background-color: black;
+    list-style: none;
+    color: yellow;
+    border: 2px solid yellow;
+    padding: 10px;
+    border-radius: 5px;
+    width: 500px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px yellow;
+    }
+  }
+  .show-more {
+    background-color: black;
+    color: yellow;
+    border: 2px solid yellow;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    &:hover {
+        background-color: yellow;
+        color: black;
+    }
+  }
+  .star-wars-heading {
+    font-size: 2.5rem;
+    color: yellow;
+    text-align: center;
+    margin-bottom: -100px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 0, 0.5);
+  }
