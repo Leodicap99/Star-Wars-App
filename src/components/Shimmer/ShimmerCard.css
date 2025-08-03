@@ -1,0 +1,59 @@
+.shimmer-card {
+    background-color: #111;
+    border: 2px solid yellow;
+    border-radius: 5px;
+    padding: 30px 20px; /* Increased vertical padding */
+    width: 500px;
+    min-height: 180px; /* Add minimum height for more space */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    color: transparent;
+    box-shadow: 0 0 10px yellow;
+  }
+  
+  .shimmer-line {
+    height: 14px;
+    background: #222;
+    margin: 12px auto;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .shimmer-line.title {
+    width: 70%;
+  }
+  .shimmer-line:not(.title) {
+    width: 90%;
+  }
+  
+  /* Add more shimmer lines */
+  .shimmer-line.extra {
+    width: 60%;
+    height: 10px;
+  }
+  
+  .shimmer-line::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150%;
+    height: 100%;
+    width: 150%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 0, 0.2), transparent);
+    animation: shimmer-glow 1.8s infinite;
+  }
+  
+  @keyframes shimmer-glow {
+    0% {
+      left: -150%;
+    }
+    50% {
+      left: 100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  

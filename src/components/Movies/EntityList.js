@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
-import { fetchArrayOfResponses } from "../utils/fetchArrayOfResponses";
+import { fetchArrayOfResponses } from "../../utils/fetchArrayOfResponses";
+import ShimmerCard from "../Shimmer/ShimmerCard";
 
 function EntityList({title ,urls, renderItem}){
-     const [showAll, setShowAll] = useState(false);
+    const [showAll, setShowAll] = useState(false);
     const [visibleItems,setVisibleItems] = useState([]);
     const [items, setItems] = useState([]);
+    const [loading,setLoading] = useState(true);
     useEffect(()=>{
         const fetchAllEntities = async() => {
             try{
@@ -12,6 +14,8 @@ function EntityList({title ,urls, renderItem}){
             setItems(fetchedItems);
             }catch(err){
                 console.error('Error',err);
+            }finally{
+                setLoading(false);
             }
         }
         fetchAllEntities();
@@ -25,6 +29,9 @@ function EntityList({title ,urls, renderItem}){
     },[showAll, items])
     function handleShowMore() {
         setShowAll(!showAll);
+    }
+    if(loading){
+        return <ShimmerCard />
     }
     return (
         <div className="character-description">

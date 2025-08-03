@@ -1,11 +1,13 @@
 
 import './App.css';
-import Movies from './components/Movies';
+import Header from './components/Header';
+import Movies from './components/Movies/Movies';
 
 function App() {  
   return (
     <div className="App">
-      <Movies  />
+      <Header />
+      <Movies />
     </div>
   );
 }

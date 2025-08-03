@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useSearchParams } from "react-router";
 import EntityList from "./EntityList";
-import VehicleCard from "./Cards/VehicleCard";
-import Character from "./Cards/CharacterCard";
-import Planet from "./Cards/PlanetCard";
-import Starship from "./Cards/StarshipCard";
-import SpecieCard from "./Cards/SpecieCard";
+import VehicleCard from "../Cards/VehicleCard";
+import Character from "../Cards/CharacterCard";
+import Planet from "../Cards/PlanetCard";
+import Starship from "../Cards/StarshipCard";
+import SpecieCard from "../Cards/SpecieCard";
+import LoadingScreen from "../Shimmer/LoadingScreen";
 
 function Movie(){
     const [searchParams] = useSearchParams();
@@ -31,7 +32,7 @@ function Movie(){
         fetchData();
     },[movieUrl]);
     if (loading) {
-        return <p>Loading...</p>;
+        return <LoadingScreen />;
     }
 
     if (error) {
