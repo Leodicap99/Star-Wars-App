@@ -41,6 +41,19 @@ Make sure Docker is installed and running on your system.
 
 ---
 
+---
+
+## 💡 Design Decisions
+
+- **Redux Toolkit**: _Not used_ because the app is fairly small and didn’t involve deeply nested or shared state. React's built-in state and prop-drilling were sufficient.
+  
+- **Ant Design**: Used for table components and consistent UI because the team mentioned it was their preferred styling system.
+
+- **Docker**: While not essential, Docker was implemented because containerization was mentioned. It ensures the app can be deployed and run in a consistent environment, though package-lock.json already handles dependency control.
+
+- **404 Page**: A custom Star Wars–themed 404 page with black background and yellow glowing text was added for a polished, on-brand user experience.
+
+---
 ## 📁 Folder Structure
 
 ```
